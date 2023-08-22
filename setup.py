@@ -5,7 +5,7 @@ from setuptools import setup
 with open('README.md') as f:
     long_description = f.read()
 
-setup(name="pipelinewise-target-redshift",
+setup(name="pipelinewise-custom-target-redshift",
       version="1.6.0",
       description="Singer.io target for loading data to Amazon Redshift - PipelineWise compatible",
       long_description=long_description,
@@ -34,7 +34,7 @@ setup(name="pipelinewise-target-redshift",
       },
       entry_points="""
           [console_scripts]
-          target-redshift=target_redshift:main
+          custom-target-redshift=target_redshift:main
       """,
       packages=["target_redshift"],
       package_data = {},
